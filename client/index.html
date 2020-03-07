@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
+    <link rel="stylesheet" type="text/css" href="style.scss">
+    <link href="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.css" rel="stylesheet"/>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
     <title>Children of the Andes</title>
   </head>
   <body>
-    <h1>hi 😌</h1>
+    <div id="fullpage">
+      <div class="section">Front Page</div>
+      <div class="section">
+        <div class="typeform-widget" data-url="https://childrenotandes.typeform.com/to/Ttpys3" style="width: 100%; height: 500px;">
+        </div> 
+        <script> 
+        (function() { 
+          var qs,js,q,s,d=document, 
+          gi=d.getElementById, ce=d.createElement, 
+          gt=d.getElementsByTagName, id="typef_orm", 
+          b="https://embed.typeform.com/"; 
+          if(!gi.call(d,id)) { 
+            js=ce.call(d,"script"); 
+            js.id=id; js.src=b+"embed.js"; 
+            q=gt.call(d,"script")[0]; 
+            q.parentNode.insertBefore(js,q) 
+            } 
+            })() 
+            </script> 
+        <div style="
+        font-family: Sans-Serif;
+        font-size: 12px;color: 
+        #999;opacity: 0.5; 
+        padding-top: 5px;"> powered by 
+        <a href="https://admin.typeform.com/signup?utm_campaign=Ttpys3&utm_source=typeform.com-01E2SMQGZ64C8VX8D6Q9QQT3C1-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> 
+        </div>
+      </div>
+      <div class="section">Schedule</div>
+      <div class="section">Flights</div>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+    <script src="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.js"></script>
+    <script>
+ $(document).ready(function() {
+    $('#fullpage').fullpage({
+        sectionsColors: ['#f2f2f2', '#4BBFC3', '#7BAABE'],
+        navigation: true,
+        autoScrolling:true,
+		    scrollHorizontally: true,
+        afterRender: function() {
+            setInterval(function() {
+                // $.fn.fullpage.moveSectionDown();
+            }, 1500);
+        }
+    });    
+});
+    </script>
   </body>
 </html>
