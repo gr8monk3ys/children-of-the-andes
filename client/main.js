@@ -8,7 +8,9 @@ function createWindow() {
       nodeIntegration: true
     }
   })
-  win.loadFile('index.html')
+  win.loadFile('./client/index.html')
+  //Option to open dev tools on start:
+  //win.webContents.openDevTools();
 }
 
 app.whenReady().then(createWindow)
