@@ -2,9 +2,10 @@
   "name": "Children-of-the-Andes",
   "version": "1.0.0",
   "description": "A website for a non-profit organization that takes volunteers to teach children in a small village in Peru",
-  "main": "index.js",
+  "main": "./client/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/gr8monk3ys/Children-of-the-Andes/issues"
   },
-  "homepage": "https://github.com/gr8monk3ys/Children-of-the-Andes#readme"
+  "homepage": "https://github.com/gr8monk3ys/Children-of-the-Andes#readme",
+  "devDependencies": {
+    "electron": "^8.1.0"
+  }
 }
