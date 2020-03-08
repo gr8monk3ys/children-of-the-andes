@@ -6,7 +6,7 @@ function callFullPage(){
         controlArrows: false,
         slidesNavigation: true,
         navigation: true,
-        navigationTooltips: ['Home', 'About Us', 'Schedule', 'Flights', 'Learning', 'Contact Us'],
+        navigationTooltips: ['Home', 'About Us', 'Schedule','Flights', 'Learning', 'Contact Us'],
         showActiveTooltip: true,
 
         //scrollingSpeed: 1500,
