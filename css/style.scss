@@ -1,7 +1,3 @@
-* {
-    background-position: center;
-}
-
 h1 {
     font-family: monsterat;
     text-align: center;
@@ -66,7 +62,8 @@ h1 {
 }
 
 .schedule {
-    background-color: #ad62aa;
+    background-image: url(../assets/images/peru-flag.JPG);
+    background-size: cover;
 
     .table-responsive {
         font-size: 20px;
@@ -75,22 +72,10 @@ h1 {
         width: 80%;
         margin-left: 10%;
     }
-    #schedule-page {
-        background-image: url(../assets/images/san-pedro.JPG);
-        background-size: cover;
-    }
-
-    #lima {
-
-    }
-
-    #san-pedro {
-        
-    }
 }
 
 .flights {
-    background-image: url(../assets/images/peru-flag.JPG);
+    background-image: url(../assets/images/san-pedro.JPG);
     background-size: cover;
 
     input.LocationAutosuggest__input___2M51F {
@@ -108,17 +93,37 @@ h1 {
 }
 
 .learning-modules {
+    background-position: center;
+    background-image: url(../assets/images/llamas.jpg);
+    background-size: cover;
+
+    h1 {
+        color: white;
+    }
+
     .btn{
         align-content: center;
         margin-top: 10%;
         margin-left: 46.5%;
+        margin-top: 20%;
     }
 }
 
 .contact {
-    background-position: top;
+    background-position: center;
     background-image: url(../assets/images/volunteers.JPG);
+    background-size: cover;
     color: white; 
+
+    h1 {
+        text-align: center;
+    }
+
+    #facebook {
+        align-items: center;
+        margin-left: 40.5%;
+        
+    }
 }
 
 .typeform-widget {
