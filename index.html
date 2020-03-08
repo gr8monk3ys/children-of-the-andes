@@ -71,7 +71,7 @@
         </div>
       </div>
       <div class="section schedule" id="schedule-page">
-        <h1>Schedule</h1>
+        <h1 id="schedule">Schedule</h1>
           <table class="table-responsive table-dark">
             <thead>
               <tr>
@@ -214,10 +214,12 @@
       </div>
       <div class="section flights" id="flights">
         <h1>Flights</h1>
-
-        <div data-skyscanner-widget="SearchWidget"></div>
-          <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
-      </div>
+        <div class="container">
+          <div data-skyscanner-widget="SearchWidget"></div>
+            <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+        </div>
+        </div>
+        <
       <div class="section learning-modules">
         <h1>Learning Modules</h1>
         <form method="get" action="./learning/">
