@@ -56,8 +56,7 @@
         <div class="slide">
           <div id="mapid">
             <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-            crossorigin="">
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==">
           </script>
             <script>
               const mymap = L.map('mapid').setView([-11.249649, -75.861411], 13);
@@ -66,7 +65,7 @@
               const tiles = L.tileLayer(tileUrl, {attribution});
               tiles.addTo(mymap);
               const marker = L.marker([-11.249649, -75.861411]).addTo(mymap);
-              </script>
+            </script>
           </div>
         </div>
       </div>

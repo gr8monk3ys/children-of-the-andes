@@ -65,6 +65,10 @@ h1 {
     background-image: url(../assets/images/peru-flag.JPG);
     background-size: cover;
 
+    h1{
+        color:white;
+    }
+
     .table-responsive {
         font-size: 20px;
         text-align: center;
@@ -77,10 +81,6 @@ h1 {
 .flights {
     background-image: url(../assets/images/san-pedro.JPG);
     background-size: cover;
-
-    input.LocationAutosuggest__input___2M51F {
-
-    }
     
     h1 {
         color: black;
@@ -106,6 +106,11 @@ h1 {
         margin-top: 10%;
         margin-left: 46.5%;
         margin-top: 20%;
+        transition: ease-in 1s;
+    }
+
+    .btn:hover{
+        width: 60%;
     }
 }
 
