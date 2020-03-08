@@ -1,7 +1,3 @@
-* {
-  background-position: center;
-}
-
 h1 {
   font-family: monsterat;
   text-align: center;
@@ -68,7 +64,8 @@ h1 {
 }
 
 .schedule {
-  background-color: #ad62aa;
+  background-image: url(../assets/images/peru-flag.JPG);
+  background-size: cover;
 }
 
 .schedule .table-responsive {
@@ -81,13 +78,8 @@ h1 {
   margin-left: 10%;
 }
 
-.schedule #schedule-page {
-  background-image: url(../assets/images/san-pedro.JPG);
-  background-size: cover;
-}
-
 .flights {
-  background-image: url(../assets/images/peru-flag.JPG);
+  background-image: url(../assets/images/san-pedro.JPG);
   background-size: cover;
 }
 
@@ -100,23 +92,49 @@ h1 {
   color: white;
 }
 
+.learning-modules {
+  background-position: center;
+  background-image: url(../assets/images/llamas.jpg);
+  background-size: cover;
+}
+
+.learning-modules h1 {
+  color: white;
+}
+
 .learning-modules .btn {
   -ms-flex-line-pack: center;
       align-content: center;
   margin-top: 10%;
   margin-left: 46.5%;
+  margin-top: 20%;
 }
 
 .contact {
-  background-position: top;
+  background-position: center;
   background-image: url(../assets/images/volunteers.JPG);
+  background-size: cover;
   color: white;
+}
+
+.contact h1 {
+  text-align: center;
+}
+
+.contact #facebook {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 40.5%;
 }
 
 .typeform-widget {
   width: 100%;
   height: 100%;
 }
+<<<<<<< HEAD
+/*# sourceMappingURL=style.css.map */
+=======
 
 #downloadButton{
   margin-top: 25px;
@@ -132,3 +150,4 @@ margin-right: 30%
 }
 
 /*# sourceMappingURL=style.css.map */
+>>>>>>> a26e88d196d5061237388486844fae16838b1684

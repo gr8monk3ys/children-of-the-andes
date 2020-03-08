@@ -4,13 +4,13 @@ function callFullPage(){
     new fullpage('#fullpage', {
         //options here
         autoScrolling:true,
-        scrollHorizontally: false,
-        controlArrows: true,
+        scrollHorizontally: true,
+        controlArrows: false,
         slidesNavigation: true,
         navigation: true,
-        navigationTooltips: ['Home', 'About Us', 'Schedule', 'Flights', 'Contact Us'],
+        navigationTooltips: ['Home', 'About Us', 'Schedule', 'Flights', 'Learning', 'Contact Us'],
         showActiveTooltip: true, 
-        scrollingSpeed: 1250,
+        // scrollingSpeed: 1000,
       });
 
       fullpage_api.setKeyboardScrolling(true);
