@@ -1,0 +1,71 @@
+h1 {
+    font-family: monsterat;
+    text-align: center;
+    color: white;
+}
+
+.front {
+    background-color: #596157;
+    background-image: url(../assets/logos/Machu-Picchu-logo.png);
+    background-size: cover;
+    h1 {
+        font-size: 60px;
+        color: white;
+    }
+
+    h3 {
+        text-align: center;
+        margin-left: 40%;
+        color: white;
+    }
+    .grid-container {
+        display: grid;  
+        grid-template-columns: auto auto;
+    }
+}
+
+.about {
+    #about-us {
+        background-image: url(../assets/images/landing_page.JPG);
+        background-size: cover;
+    }
+
+    #information {
+        background-image: url();
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+
+    p {
+       font-size: 20px;     
+    }
+}
+
+.schedule {
+    background-color: #552244;
+    #schedule-page {
+        background-image: url(../assets/images/san-pedro.JPG);
+        background-size: cover;
+    }
+
+    #lima {
+
+    }
+
+    #san-pedro {
+
+    }
+}
+
+.flights {
+    background-color: #cfd186;
+}
+
+.typeform-widget {
+    width: 100%; 
+    height:  100%;
+}
+
+#front-container {
+
+}
