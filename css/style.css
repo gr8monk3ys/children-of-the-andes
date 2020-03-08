@@ -1,72 +1,63 @@
-* {
-    color: black;
-}
-
 h1 {
-    font-family: monsterat;
-    text-align: center;
-    color: white;
+  font-family: monsterat;
+  text-align: center;
+  color: white;
 }
 
 .front {
-    background-image: url(../assets/logos/Machu-Picchu-logo.png);
-    background-size: cover;
-    h1 {
-        font-size: 60px;
-    }
-
-    h3 {
-        text-align: center;
-        margin-left: 40%;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-    }
+  background-color: #596157;
+  background-image: url(../assets/logos/Machu-Picchu-logo.png);
+  background-size: cover;
 }
 
-.about {
-    background-image: url(../assets/images/landing_page.JPG);
-    background-size: cover;
-    #information {
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
-    }
+.front h1 {
+  font-size: 60px;
+  color: white;
+}
 
-    p {
-       font-size: 20px;
-    }
+.front h3 {
+  text-align: center;
+  margin-left: 40%;
+  color: white;
+}
+
+.front .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.about #about-us {
+  background-image: url(../assets/images/landing_page.JPG);
+  background-size: cover;
+}
+
+.about #information {
+  background-image: url();
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.about p {
+  font-size: 20px;
 }
 
 .schedule {
-    #schedule-page {
-        background-image: url(../assets/images/san-pedro.JPG);
-        background-size: cover;
-    }
+  background-color: #552244;
+}
 
-    #lima {
-
-    }
-
-    #san-pedro {
-
-    }
+.schedule #schedule-page {
+  background-image: url(../assets/images/san-pedro.JPG);
+  background-size: cover;
 }
 
 .flights {
-
+  background-color: #cfd186;
 }
 
 .typeform-widget {
-    width: 100%;
-    height:  100%;
+  width: 100%;
+  height: 100%;
 }
-
-#contact-paragraph{
-  text-align: center;
-
-}
-
-#front-container {
-
-}
+/*# sourceMappingURL=style.css.map */

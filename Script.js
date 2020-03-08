@@ -8,8 +8,10 @@ function callFullPage(){
         navigation: true,
         navigationTooltips: ['Home', 'About Us', 'Schedule', 'Flights', 'Contact Us'],
         showActiveTooltip: true, 
-        scrollingSpeed: 1250,
+        scrollingSpeed: 1000,
       });
+
+      fullpage_api.setKeyboardScrolling(true);
 }
 
 function callTypeForm(){
