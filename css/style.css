@@ -147,6 +147,22 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 40.5%;
+
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+    opacity: 100;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    transition: .6s;
+
+
+}
+
+.contact #facebook:hover {
+    /*filter: grayscale(100%);
+    opacity: 1; */
+    margin-top: -5px;
+    box-shadow: 0px 18px 22px -15px rgba(0,0,0,0.3);
 }
 
 .typeform-widget {
