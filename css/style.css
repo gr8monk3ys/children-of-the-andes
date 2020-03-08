@@ -38,6 +38,11 @@ h1 {
   widtch: 50%;
 }
 
+.about #map-slide {
+  background-image: url(/assets/images/kids.JPG);
+  background-size: cover;
+}
+
 .about .grid-container {
   display: -ms-grid;
   display: grid;
@@ -46,8 +51,14 @@ h1 {
   padding: 10%;
 }
 
-.about #mapid {
-  height: 90%;
+.about .btn {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 10%;
+  margin-left: 46.5%;
+  margin-top: 20%;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
 }
 
 .about h1 {

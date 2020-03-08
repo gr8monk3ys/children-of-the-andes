@@ -36,16 +36,29 @@ h1 {
         widtch:50%;
     }
 
+    #map-slide {
+        background-image: url(/assets/images/kids.JPG);
+        background-size: cover;
+    }
+
     .grid-container{
         display: grid;  
         grid-template-columns: 50% 50%;
         padding:10%;
     }
 
-    #mapid { 
-        height: 90%; 
-        // width: 80%;
+    .btn{
+        align-content: center;
+        margin-top: 10%;
+        margin-left: 46.5%;
+        margin-top: 20%;
+        transition: ease-in 1s;
     }
+
+    // #mapid { 
+    //     height: 90%; 
+    //     // width: 80%;
+    // }
 
     h1 {
         color: white;
