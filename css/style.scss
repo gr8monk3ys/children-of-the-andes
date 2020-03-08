@@ -27,10 +27,6 @@ h1 {
         display: grid;  
         grid-template-columns: auto auto;
     }
-
-    .typeform-widget {
-        
-    }
 }
 
 .about {
@@ -96,6 +92,10 @@ h1 {
 .flights {
     background-image: url(../assets/images/peru-flag.JPG);
     background-size: cover;
+
+    input.LocationAutosuggest__input___2M51F {
+
+    }
     
     h1 {
         color: black;
@@ -104,6 +104,14 @@ h1 {
     .SearchWidget {
         padding: 10;
         color: white;
+    }
+}
+
+.learning-modules {
+    .btn{
+        align-content: center;
+        margin-top: 10%;
+        margin-left: 46.5%;
     }
 }
 

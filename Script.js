@@ -5,7 +5,7 @@ function callFullPage(){
         //options here
         autoScrolling:true,
         scrollHorizontally: false,
-        controlArrows: false,
+        controlArrows: true,
         slidesNavigation: true,
         navigation: true,
         navigationTooltips: ['Home', 'About Us', 'Schedule', 'Flights', 'Contact Us'],
