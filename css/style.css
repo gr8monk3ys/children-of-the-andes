@@ -100,6 +100,13 @@ h1 {
   color: white;
 }
 
+.learning-modules .btn {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 10%;
+  margin-left: 46.5%;
+}
+
 .contact {
   background-position: top;
   background-image: url(../assets/images/volunteers.JPG);
