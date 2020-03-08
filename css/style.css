@@ -170,4 +170,8 @@ margin-right: 30%
 
 }
 
+th, td {
+  padding: 15px;
+  text-align: left;
+}
 /*# sourceMappingURL=style.css.map */
