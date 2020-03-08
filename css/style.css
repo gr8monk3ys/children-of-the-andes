@@ -1,3 +1,7 @@
+* {
+  background-position: center;
+}
+
 h1 {
   font-family: monsterat;
   text-align: center;
@@ -5,7 +9,7 @@ h1 {
 }
 
 .front {
-  background-color: #596157;
+  background-color: white;
   background-image: url(../assets/logos/Machu-Picchu-logo.png);
   background-size: cover;
 }
@@ -33,10 +37,30 @@ h1 {
   background-size: cover;
 }
 
+.about #about-image {
+  height: 100%;
+  widtch: 50%;
+}
+
+.about .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  padding: 10%;
+}
+
+.about #mapid {
+  height: 90%;
+}
+
+.about h1 {
+  color: white;
+}
+
 .about #information {
-  background-image: url();
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  color: black;
+  background-color: white;
 }
 
 .about p {
@@ -44,7 +68,17 @@ h1 {
 }
 
 .schedule {
-  background-color: #552244;
+  background-color: #ad62aa;
+}
+
+.schedule .table-responsive {
+  font-size: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .schedule #schedule-page {
@@ -53,7 +87,23 @@ h1 {
 }
 
 .flights {
-  background-color: #cfd186;
+  background-image: url(../assets/images/peru-flag.JPG);
+  background-size: cover;
+}
+
+.flights h1 {
+  color: black;
+}
+
+.flights .SearchWidget {
+  padding: 10;
+  color: white;
+}
+
+.contact {
+  background-position: top;
+  background-image: url(../assets/images/volunteers.JPG);
+  color: white;
 }
 
 .typeform-widget {
