@@ -132,4 +132,22 @@ h1 {
   width: 100%;
   height: 100%;
 }
+<<<<<<< HEAD
 /*# sourceMappingURL=style.css.map */
+=======
+
+#downloadButton{
+  margin-top: 25px;
+  width: 40%;
+margin-left: 30%;
+margin-right: 30%
+  /*
+  margin-top: 25px;
+  text-align: center;
+  margin-right: 25px;
+  */
+
+}
+
+/*# sourceMappingURL=style.css.map */
+>>>>>>> a26e88d196d5061237388486844fae16838b1684
