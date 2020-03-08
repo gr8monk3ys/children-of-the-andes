@@ -129,8 +129,8 @@ h1 {
   margin-left: 40.5%;
 
   filter: grayscale(0%);
-  -webkit-filter: grayscale(100%);
-    opacity: .6;
+  -webkit-filter: grayscale(0%);
+    opacity: 100;
     -webkit-transition: .6s;
     -moz-transition: .6s;
     transition: .6s;
