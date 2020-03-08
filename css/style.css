@@ -22,10 +22,8 @@ h1 {
 }
 
 .front .grid-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  grid-template-columns: auto auto;
 }
 
 .about #about-us {
