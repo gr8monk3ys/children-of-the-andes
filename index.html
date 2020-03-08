@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -24,22 +27,9 @@
               <h3>Leave no child behind</h3>
             </div>
             <div class="grid-item">
-              <button type="button" class="btn btn-primary" id="apply-button">Apply</button>
+              <a type="button" class="btn btn-primary"
+              href='https://bit.ly/3anSwiN' role="button">Apply</a>
             </div>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="typeform-widget" data-url="https://childrenotandes.typeform.com/to/Ttpys3">
-          </div>
-          <script>callTypeForm();</script>
-          <div style="
-          font-family: Sans-Serif;
-          font-size: 12px;color:
-          #999;opacity: 0.5;
-          padding-top: 5px;"> powered by
-          <a href="https://admin.typeform.com/signup?utm_campaign=Ttpys3&utm_source=typeform.com-
-          01E2SMQGZ64C8VX8D6Q9QQT3C1-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_
-          term=EN" style="color: #999" target="_blank">Typeform</a>
           </div>
         </div>
       </div>
@@ -48,104 +38,178 @@
           <h1>About Us</h1>
         </div>
         <div class="slide" id="information">
-          <p>
-            Children of the Andes is a summer volunteer opportunity settled in San Pedro de Cajas, Peru. We work at
-            the grassroots level in collaboration with community leaders to develop sustainable solutions that address
-             the pressing issues of the education achievement gap and health inequity in the town of San Pedro de Cajas,
-              Peru. Our development plan strives towards measurable and sustainable progress with organized community
-              projects and realistic goals, objectives, and indicators. Most importantly, our goals align with the
-              development goals of the SPC community.
-          </p>
+          <div class="grid-container">
+            <div class="grid-item">
+              <p>
+                Children of the Andes is a summer volunteer opportunity settled in San Pedro de Cajas, Peru. We work at
+                the grassroots level in collaboration with community leaders to develop sustainable solutions that address
+                 the pressing issues of the education achievement gap and health inequity in the town of San Pedro de Cajas,
+                  Peru. Our development plan strives towards measurable and sustainable progress with organized community
+                  projects and realistic goals, objectives, and indicators. Most importantly, our goals align with the
+                  development goals of the SPC community.
+              </p>
+            </div>
+            <div class="grid-item">
+              <img src= "./assets/logos/main-logo.png" id="about-image">
+            </div>
+          </div> 
+        </div>
+        <div class="slide">
+          <div id="mapid">
+            <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin="">
+          </script>
+            <script>
+              const mymap = L.map('mapid').setView([-11.249649, -75.861411], 13);
+              const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+              tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+              const tiles = L.tileLayer(tileUrl, {attribution});
+              tiles.addTo(mymap);
+              const marker = L.marker([-11.249649, -75.861411]).addTo(mymap);
+              </script>
+          </div>
         </div>
       </div>
       <div class="section schedule" id="schedule">
         <div class="slide" id="schedule-page">
           <h1>Schedule</h1>
-        </div>
-        <div class="slide" id="lima">
-          <h1>Lima</h1>
           <table class="table-responsive table-dark">
             <thead>
               <tr>
+                <th scope="col">#</th>
                 <th scope="col">Date</th>
-                <th scope="col">To</th>
-                <th scope="col">From</th>
+                <th scope="col">Time</th>
+                <th scope="col">Starting Point</th>
+                <th scope="col">Destination</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>May 17 2020</td>
+                <td>5:30 PM</td>
+                <td>Aeropuerto LIM </td>
+                <td> Calle Moscu 169 los Portales, Ate Vitarte</td>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="slide" id="san-pedro">
-          <h1>San Pedro</h1>
-          <table class="table-responsive table-dark">
-            <thead>
-              <tr>
-                <th scope="col">Date</th>
-                <th scope="col">To</th>
-                <th scope="col">From</th>
-              </tr>
-            </thead>
-            <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>May 18 2020</td>
+                <td>9:30 AM</td>
+                <td>Calle Moscu 169 to Portales, Ate Vitarte</td>
+                <td>Plaza de Armas</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>May 18 2020</td>
+                <td>5:00 PM</td>
+                <td>Plaza de Armas</td>
+                <td>Circuito de Aguas</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>May 18 2020</td>
+                <td>8:00 PM</td>
+                <td>Circuito de Aguas</td>
+                <td>Calle Moscu 169 to Portales, Ate Vitarte</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>May 19 2020</td>
+                <td>5:00 PM</td>
+                <td>Condorin</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>May 23 2020</td>
+                <td>1:00 PM</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+                <td>Escuela Superior de Formación Artística</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
+                <td>May 23 2020</td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Escuela Superior de Formación Artística</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>May 26 2020</td>
+                <td>1:00 PM</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+                <td>Pampa de Condorin - Vicunas</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>May 26 2020</td>
+                <td>2:30 PM</td>
+                <td>Pampa de Condorin - Vicunas</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>May 28 2020</td>
+                <td>8:00 AM</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+                <td>Gallineria</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>May 28, 2020</td>
+                <td>4:00 PM</td>
+                <td>Pacupahuay</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>May 29 2020</td>
+                <td>1:00 PM</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+                <td>Cachipozo</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>May 29 2020</td>
+                <td>2:30 PM</td>
+                <td>Cachipozo</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>May 30 2020</td>
+                <td>4:00 PM</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+                <td>Galpón</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>May 30 2020</td>
+                <td>6:00 PM</td>
+                <td>Galpón</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>July 1 2020</td>
+                <td>1:00 PM</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+                <td>Patamarca</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>July 1 2020</td>
+                <td>2:30 PM</td>
+                <td>Patamarca</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>July 2 2020</td>
+                <td>9:00 AM</td>
+                <td>300 Bolognesi (Residencia Celsa)</td>
+                <td>Condorin</td>
               </tr>
             </tbody>
           </table>
@@ -154,11 +218,11 @@
       <div class="section flights" id="flights">
         <h1>Flights</h1>
         <div data-skyscanner-widget="SearchWidget"></div>
-<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+          <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
       </div>
       <div class="section contact" id="flights">
         <h1>Contact Us!</h1>
-
+        
       </div>
     </div>
     <script src="./script.js"></script>

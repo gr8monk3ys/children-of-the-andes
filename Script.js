@@ -1,14 +1,16 @@
+
+
 function callFullPage(){ 
     new fullpage('#fullpage', {
         //options here
         autoScrolling:true,
-        scrollHorizontally: true,
+        scrollHorizontally: false,
         controlArrows: false,
         slidesNavigation: true,
         navigation: true,
         navigationTooltips: ['Home', 'About Us', 'Schedule', 'Flights', 'Contact Us'],
         showActiveTooltip: true, 
-        scrollingSpeed: 1000,
+        scrollingSpeed: 1250,
       });
 
       fullpage_api.setKeyboardScrolling(true);
@@ -16,8 +18,10 @@ function callFullPage(){
 
 function callTypeForm(){
     var qs,js,q,s,d=document, 
-    gi=d.getElementById, ce=d.createElement, 
-    gt=d.getElementsByTagName, id="typef_orm", 
+    gi=d.getElementById, 
+    ce=d.createElement, 
+    gt=d.getElementsByTagName, 
+    id="typef_orm", 
     b="https://embed.typeform.com/"; 
     if(!gi.call(d,id)) { 
         js=ce.call(d,"script"); 
