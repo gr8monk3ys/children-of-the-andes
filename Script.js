@@ -9,7 +9,12 @@ function callFullPage(){
         navigationTooltips: ['Home', 'About Us', 'Schedule','Flights', 'Learning', 'Contact Us'],
         showActiveTooltip: true,
 
-        //scrollingSpeed: 1500,
+        fixedElements: 'flights',
+            resize: false,
+            scrollOverflow: true,
+            css3: true,
+            paddingTop: 100,
+            loopTop: false
       });
 
       fullpage_api.setKeyboardScrolling(true);
