@@ -18,9 +18,9 @@ h1 {
         margin-left: 40%;
         color: white;
     }
-    
+
     .grid-container {
-        display: grid;  
+        display: grid;
         grid-template-columns: auto auto;
     }
 }
@@ -42,7 +42,7 @@ h1 {
     }
 
     .grid-container{
-        display: grid;  
+        display: grid;
         grid-template-columns: 50% 50%;
         padding:10%;
     }
@@ -55,8 +55,8 @@ h1 {
         transition: ease-in 1s;
     }
 
-    // #mapid { 
-    //     height: 90%; 
+    // #mapid {
+    //     height: 90%;
     //     // width: 80%;
     // }
 
@@ -70,7 +70,7 @@ h1 {
     }
 
     p {
-       font-size: 20px;     
+       font-size: 20px;
     }
 }
 
@@ -94,7 +94,7 @@ h1 {
 .flights {
     background-image: url(../assets/images/san-pedro.JPG);
     background-size: cover;
-    
+
     h1 {
         color: black;
     }
@@ -131,7 +131,7 @@ h1 {
     background-position: center;
     background-image: url(../assets/images/volunteers.JPG);
     background-size: cover;
-    color: white; 
+    color: white;
 
     h1 {
         text-align: center;
@@ -140,11 +140,11 @@ h1 {
     #facebook {
         align-items: center;
         margin-left: 40.5%;
-        
+
     }
 }
 
 .typeform-widget {
-    width: 100%; 
+    width: 100%;
     height:  100%;
 }
