@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/gr8monk3ys/Children-of-the-Andes#readme",
   "devDependencies": {
-    "electron": "^8.1.0"
+    "electron": "^8.5.2"
   }
 }
