@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/hero.png" alt="children-of-the-andes preview" width="640">
+</p>
+
 ## Inspiration
 When thinking of an idea of what we wanted to do. We were determining what type of impact we wanted to make. It was either to make something for the sake of it being fun, for the sake of it being cool, or for the sake of just trying to innovate. In our case, we went into this with the goal of trying to give back. We collaborated with a non-profit organization that takes volunteers to a remote village in Peru called San Pedro where they are able to teach the children of the schools about certain subjects. The process and planning, of course, is not easy, and we wanted to support and try to help this organization out.
 
