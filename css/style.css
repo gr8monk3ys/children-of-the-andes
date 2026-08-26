@@ -39,7 +39,7 @@ h1 {
 }
 
 .about #map-slide {
-  background-image: url(/assets/images/kids.JPG);
+  background-image: url(../assets/images/kids.JPG);
   background-size: cover;
 }
 
