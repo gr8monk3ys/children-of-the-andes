@@ -115,11 +115,14 @@ h1 {
     }
 
     .btn{
-        align-content: center;
-        margin-top: 10%;
-        margin-left: 46.5%;
-        margin-top: 20%;
+        display: block;
+        width: fit-content;
+        margin: 4% auto 0;
         transition: ease-in 1s;
+    }
+
+    .btn:first-of-type{
+        margin-top: 20%;
     }
 
     .btn:hover{

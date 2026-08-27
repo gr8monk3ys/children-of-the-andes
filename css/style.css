@@ -118,13 +118,17 @@ h1 {
 }
 
 .learning-modules .btn {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin-top: 10%;
-  margin-left: 46.5%;
-  margin-top: 20%;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 4% auto 0;
   -webkit-transition: ease-in 1s;
   transition: ease-in 1s;
+}
+
+.learning-modules .btn:first-of-type {
+  margin-top: 20%;
 }
 
 .learning-modules .btn:hover {
