@@ -1,0 +1,27 @@
+name: CI
+on:
+  push:
+    branches: [master]
+  pull_request:
+jobs:
+  links:
+    name: link-check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check local links and assets resolve
+        run: |
+          python3 - <<'PY'
+          import re, sys, pathlib
+          root = pathlib.Path('.')
+          missing = []
+          for f in ['index.html', 'map.html', 'css/style.css']:
+              text = pathlib.Path(f).read_text()
+              refs = re.findall(r'(?:href|src)=["\']([^"\']+)["\']', text) + re.findall(r'url\(([^)]+)\)', text)
+              for r in refs:
+                  if r.startswith(('http', '#', 'mailto:')): continue
+                  p = (pathlib.Path(f).parent / r).resolve()
+                  if not p.exists(): missing.append(f'{f}: {r}')
+          print('\n'.join(missing) or 'all local references resolve')
+          sys.exit(1 if missing else 0)
+          PY
