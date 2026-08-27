@@ -6,7 +6,7 @@ Static website for a volunteer program that brings teachers to the children of S
   <img src="docs/screenshot.png" alt="Homepage: Machu Picchu illustration with the title Children of the Andes and an Apply button" width="720">
 </p>
 
-The site is a single scrolling page (fullPage.js) with six sections: home, about, trip schedule, a Skyscanner flight-search widget, a learning section, and contact. `map.html` is a Mapbox GL view of Lima, the first stop on the trip. The **Download Modules** button fetches a zip of English worksheets from this repo's [releases](https://github.com/gr8monk3ys/children-of-the-andes/releases/tag/learning-modules); it lives there rather than in the tree because San Pedro has no internet, so volunteers print everything before they go. Math worksheets are in `learning/Math/`.
+The site is a single scrolling page (fullPage.js) with six sections: home, about, trip schedule, a Skyscanner flight-search widget, a learning section, and contact. `map.html` is a Mapbox GL view of Lima, the first stop on the trip. The **Download Modules** buttons fetch zips of English and math worksheets from this repo's [releases](https://github.com/gr8monk3ys/children-of-the-andes/releases/tag/learning-modules). They are third-party printables, so they live as release assets rather than in the tree; San Pedro has no internet, so volunteers print everything before they go.
 
 ## Run locally
 
@@ -27,9 +27,8 @@ map.html          Mapbox GL map of Lima
 Script.js         fullPage.js and Typeform setup
 css/style.scss    source; style.css is the compiled output
 assets/           photos and logos
-learning/Math/    printable worksheets
 ```
 
 ## Credits
 
-Lorenzo Scaturchio, Paulo, and Jet, for HackMerced 2019. Worksheets in `learning/` come from third-party sources. MIT licensed (see `LICENSE`).
+Lorenzo Scaturchio, Paulo, and Jet, for HackMerced 2019. Worksheets in the release zips come from third-party sources. MIT licensed (see `LICENSE`).
